@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Categorias</title>
+	<script src="../js/jquery-3.1.1.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
+	<link href="../js/style.css" rel="stylesheet" media="screen">
+ 	<script type="text/javascript">
+ 
+	$.ajax({
+  	url: 'http://localhost:5000/api/list',
+  	dataType: 'json',
+  	data: {"categoria":"padaria"},
+  	success: function(dados){
+  		var html = '';
+
+  		for(var key in dados){
+  			html += '<p class="p-id"> ID: '+dados[key].id + '</p>';
+  			html += '<img class="responsiva" width="100px" height="100px" style="margin-bottom:20px;" alt="imagem" src="../img/'+dados[key].imagem +'" />';
+  			html += '<p class="p-id"> TEXTO: '+dados[key].texto + '</p>';
+  			html += '<p class="p-id"> CATEGORIA: '+dados[key].categoria + '</p>';
+  			html += '<hr/>';
+  		}
+  		$('#dados').append(html);
+      }
+  });
+ 	</script>
+</head>
+<body>
+<H1>Teste Categorias Template</H1>
+<hr/>
+<div id="dados">
+
+</div>
+</body>
+</html>

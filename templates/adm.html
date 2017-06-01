@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Descontação</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="static/css/base/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--start header -->
+    <div class="header">
+        <nav class="navbar navbar-default navbar-fixed-top header-color">
+            <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-7 col-md-5 col-lg-6">
+                            <a href="index.html"> <img src="img/logo.png" class="img-responsive" alt="Imagem Responsiva"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end header -->
+                <!-- start continue -->
+                <div class="row pull-right">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="mySidenav" class="sidenav">
+                            <form role="form">
+                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-11">
+                                    <label for="searchBar"></label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="searchBar" placeholder="Busque a Categoria" />
+                                        <span class="input-group-btn"><button type="submit" class="btn btn-info" value="Procurar">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <h1 id="cat">Categorias</h1>
+                            <a href="#">Alimentação</a>
+                            <a href="#">Esporte</a>
+                            <a href="#">Auto-Peças</a>
+                            <a href="#">Comercios</a>
+
+                            <h1 id="cat">Outros</h1>
+                            <h1><a href="#">Sugestões</a></h1>
+                            <h1><a href="#">Contato</a></h1>
+                        </div>
+                    </div>
+                    <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+            <!--end menu -->
+        </nav>
+    </div>
+
+
+
+    <!--start Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="#">Home</a> ·
+                <a href="#">Anúncios</a> ·
+                <a href="#">Sugestões</a> ·
+                <a href="#">Contato</a>
+            </p>
+            <p>Copyright © 2017 - Moweb Desenvolvimento.</p>
+        </div>
+    </footer>
+    <!--end footer -->
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/myjava.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+
+</html>

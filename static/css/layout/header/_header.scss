@@ -1,0 +1,19 @@
+    .header-color {
+        background: $color-pattern;
+        border-radius: 0px;
+    }
+    
+    .logo {
+        margin-top: -45px;
+        width: 100%;
+    }
+    
+    .header {
+        height: 100px;
+        width: 100%;
+        display: table;
+    }
+    
+    body {
+        background: $body;
+    }

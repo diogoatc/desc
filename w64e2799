@@ -1,0 +1,68 @@
+[33mcommit 64e2799972432d6114597f35288fdcc2961b154a[m
+Author: diogoatc <diogol_l@hotmail.com>
+Date:   Wed May 3 10:40:23 2017 -0300
+
+    v0.6
+
+[1mdiff --git a/templates/admin.html b/templates/admin.html[m
+[1mindex f99dbf3..0a721d2 100644[m
+[1m--- a/templates/admin.html[m
+[1m+++ b/templates/admin.html[m
+[36m@@ -174,9 +174,9 @@[m
+                                         </div>[m
+                                         <!--div do alert -->[m
+                                         {% with messages = get_flashed_messages() %} {% if messages %}[m
+[31m-                                        <ul class=flashes>[m
+[32m+[m[41m                                        [m
+                                             {% for message in messages %}[m
+[31m-                                            <li>{{ message }}</li>[m
+[32m+[m[32m                                          <script type="text/javascript">alert('{{ message }}') </script>[m[41m [m
+                                             {% endfor %}[m
+                                         </ul>[m
+                                         {% endif %} {% endwith %}[m
+[36m@@ -185,25 +185,7 @@[m
+                                 </div>[m
+                             </div>[m
+                         </div>[m
+[31m-                        <!--Modal msg de confirmação-->[m
+[31m-                        <div class="modal" id="editarModal">[m
+[31m-                            <div class="modal-dialog">[m
+[31m-                                <div class="modal-content">[m
+[31m-                                    <div class="modal-header">[m
+[31m-                                        <button class="close" data-dismiss="modal" aria-label="Close">[m
+[31m-                                           <span aria-hidden="true">&times;</span>[m
+[31m-                                        </button>[m
+[31m-                                        <h4 class="modal-title">Editar dados do Cliente</h4>[m
+[31m-                                    </div>[m
+[31m-                                    <div class="modal-body">[m
+[31m-                                        <strong>Enviado com sucesso!</strong>[m
+[31m-                                    </div>[m
+[31m-                                    <div class="modal-footer">[m
+[31m-                                        <button class="btn btn-default" data-dismiss="modal">Fechar</button>[m
+[31m-                                    </div>[m
+[31m-                                </div>[m
+[31m-                            </div>[m
+[31m-                        </div>[m
+[32m+[m
+                         <!--Card cadastrar anuncio -->[m
+                         <div class="col-lg-6 col-md-6">[m
+                             <div class="card">[m
+[36m@@ -213,11 +195,11 @@[m
+                                 </div>[m
+                                 <div class="card-content table-responsive">[m
+ [m
+[31m-                                    <form>[m
+[32m+[m[32m                                    <form action="/cadanuncio" method="POST" enctype="multipart/form-data">[m
+                                         <div class="col-sm-12">[m
+                                             <div class="form-group label-floating">[m
+                                                 <label class="control-label">Categoria</label>[m
+[31m-                                                <select class="form-control" id="">[m
+[32m+[m[32m                                                <select name="categoria" class="form-control" id="">[m
+                                                     <option>Selecione a categoria</option>[m
+                                                     <option>Farmacia</option>[m
+                                                 </select>[m
+[36m@@ -238,7 +220,7 @@[m
+ [m
+                                         <div class="col-sm-12">[m
+                                             <label class="control-label">Insira Imagem</label>[m
+[31m-                        

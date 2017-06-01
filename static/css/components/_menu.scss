@@ -1,0 +1,90 @@
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #f5f5dc;
+        overflow-x: hidden;
+        transition: 0.8s;
+        padding-top: 50px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000000;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover,
+    .offcanvas a:focus {
+        color: #808080;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: -15px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 10px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    
+    .form-control {
+        display: block;
+        width: 90%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    
+    //Mudar
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-family: "Lato", sans-serif;
+    }
+    
+    body {
+        display: table;
+    }
+    
+    .container {
+        height: auto;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    
+    //end
+    h1#cat {
+        margin-left: 10px;
+    }
+    
+    .config-menu {
+        margin-left: 5px;
+        font-size: 80px;
+        font-color: white;
+    }

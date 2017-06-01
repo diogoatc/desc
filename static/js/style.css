@@ -1,0 +1,16 @@
+#dados{
+	text-align: center;
+}
+.p-id{
+	color: red;
+}
+h1{
+	text-align: center;
+}
+body{
+	font-family: 'Averia Sans Libre';
+	font-size: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-color: blue;
+}
